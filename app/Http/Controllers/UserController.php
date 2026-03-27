@@ -45,7 +45,7 @@ class UserController extends Controller
     public function goDashboard()
     {
         if(Auth::check() && Auth::user()->usertype=='admin'){
-            return view('admin.dashboar');
+            return view('admin.dashboard');
         }
         else if(Auth::check() && Auth::user()->usertype=='user'){
             return view('dashboard');
