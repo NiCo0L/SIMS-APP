@@ -16,3 +16,4 @@ Route::post('signup', [UserController::class, 'registercheck'])->name('registerc
 
 Route::get('dashboard', [UserController::class, 'goDashboard'])->name('dashboard');
 Route::get('logout', [UserController::class, 'logout'])->name('logout');
+
